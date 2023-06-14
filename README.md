@@ -78,6 +78,8 @@ Error:
 Unfortunately, `lambda deploy` does not accept a architecture flag, which would allow it to then skip the "file 
 magic" check.
 
+There's no workaround for this, so I'm stuck. The `--binary-path` arg for `lambda deploy` appears to be broken.
+
 #### Recommended solution
 
 1. `lambda deploy` should use the CARGO_TARGET_DIR directory when looking for binaries.
